@@ -10,8 +10,8 @@ def main():
 def index():
 	if request.method == 'POST':
 		number = request.form['number']
-		return render_template('index.html', number=number)
-		#return render_template('words-chart.html', number=number)
+		#return render_template('index.html', number=number)
+		return render_template('words-chart.html', number=number)
 	return render_template('index.html')
 
 
