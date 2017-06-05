@@ -6,7 +6,7 @@ app = Flask(__name__)
 def main():
 	return redirect('/index')
 
-@app.route('/index')
+@app.route('/index', methods=['GET', 'POST'])
 def index():
 	if request.method == 'POST':
 		number = request.form['number']
